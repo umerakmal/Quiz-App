@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <h1>Quiz Time!</h1>
+    </div>
+    <div class="question-section">
+      <div class="question-count">Question <span id="currentQuestion">1</span>/10</div>
+      <div class="question-text" id="questionText">Loading...</div>
+    </div>
+    <div class="options-section">
+      <button class="option" id="option1">Loading...</button>
+      <button class="option" id="option2">Loading...</button>
+      <button class="option" id="option3">Loading...</button>
+      <button class="option" id="option4">Loading...</button>
+    </div>
+    <div class="score-section">
+      Your Score: <span id="score"></span>
+    </div>
+    <div class="navigation-buttons">
+      <button id="prevButton">Previous</button>
+      <button id="nextButton">Next</button>
+    </div>
+    <button id="restartButton" style="display: none;">Restart</button> <!-- Add the restart button here -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
